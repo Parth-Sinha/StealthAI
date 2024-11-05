@@ -36,6 +36,13 @@ This project is a web application built with a FastAPI backend and a ReactJS fro
   ├── Docker-compose.yml     # Docker Compose configuration
   ├── Dockerfile             # Dockerfile for backend
   └── frontend.Dockerfile    # Dockerfile for frontend
+  |__ test/                   # Sample create / run graph
+    ├── create_graph_1.json          # Sample file for creating graph1
+    ├── create_graph_2.json          # Sample file for creating graph1
+    ├── run_graph_1_1.json       # sample run file for graph1
+    ├── run_graph_1_2.json    # sample run file for graph1
+    ├── run_graph_2_1.json     # sample run file for graph2
+    ├── run_graph_2_2.json      #sample run file for graph2
 ```
 
 ## Prerequisites
