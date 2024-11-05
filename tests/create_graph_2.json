@@ -1,0 +1,192 @@
+{
+    "nodes": [
+        {
+            "node_id": "node_A1",
+            "data_in": {},
+            "data_out": {"outputA1": 1},
+            "paths_in": [],
+            "paths_out": [
+                {
+                    "edge_id": "edge_A1_B1",
+                    "src_node": "node_A1",
+                    "dst_node": "node_B1",
+                    "src_to_dst_data_keys": {"outputA1": "inputB1"}
+                },
+                {
+                    "edge_id": "edge_A1_C1",
+                    "src_node": "node_A1",
+                    "dst_node": "node_C1",
+                    "src_to_dst_data_keys": {"outputA1": "inputC1"}
+                },
+                {
+                    "edge_id": "edge_A1_D1",
+                    "src_node": "node_A1",
+                    "dst_node": "node_D1",
+                    "src_to_dst_data_keys": {"outputA1": "inputD1"}
+                }
+            ]
+        },
+        {
+            "node_id": "node_B1",
+            "data_in": {"inputB1": 1},
+            "data_out": {"outputB1": 2},
+            "paths_in": [
+                {
+                    "edge_id": "edge_A1_B1",
+                    "src_node": "node_A1",
+                    "dst_node": "node_B1",
+                    "src_to_dst_data_keys": {"outputA1": "inputB1"}
+                }
+            ],
+            "paths_out": [
+                {
+                    "edge_id": "edge_B1_E1",
+                    "src_node": "node_B1",
+                    "dst_node": "node_E1",
+                    "src_to_dst_data_keys": {"outputB1": "inputE1"}
+                }
+            ]
+        },
+        {
+            "node_id": "node_C1",
+            "data_in": {"inputC1": 1},
+            "data_out": {"outputC1": 3},
+            "paths_in": [
+                {
+                    "edge_id": "edge_A1_C1",
+                    "src_node": "node_A1",
+                    "dst_node": "node_C1",
+                    "src_to_dst_data_keys": {"outputA1": "inputC1"}
+                }
+            ],
+            "paths_out": [
+                {
+                    "edge_id": "edge_C1_E1",
+                    "src_node": "node_C1",
+                    "dst_node": "node_E1",
+                    "src_to_dst_data_keys": {"outputC1": "inputE1"}
+                }
+            ]
+        },
+        {
+            "node_id": "node_D1",
+            "data_in": {"inputD1": 1},
+            "data_out": {"outputD1": 4},
+            "paths_in": [
+                {
+                    "edge_id": "edge_A1_D1",
+                    "src_node": "node_A1",
+                    "dst_node": "node_D1",
+                    "src_to_dst_data_keys": {"outputA1": "inputD1"}
+                }
+            ],
+            "paths_out": [
+                {
+                    "edge_id": "edge_D1_F1",
+                    "src_node": "node_D1",
+                    "dst_node": "node_F1",
+                    "src_to_dst_data_keys": {"outputD1": "inputF1"}
+                }
+            ]
+        },
+        {
+            "node_id": "node_E1",
+            "data_in": {"inputE1": 3},
+            "data_out": {"outputE1": 5},
+            "paths_in": [
+                {
+                    "edge_id": "edge_B1_E1",
+                    "src_node": "node_B1",
+                    "dst_node": "node_E1",
+                    "src_to_dst_data_keys": {"outputB1": "inputE1"}
+                },
+                {
+                    "edge_id": "edge_C1_E1",
+                    "src_node": "node_C1",
+                    "dst_node": "node_E1",
+                    "src_to_dst_data_keys": {"outputC1": "inputE1"}
+                }
+            ],
+            "paths_out": [
+                {
+                    "edge_id": "edge_E1_G1",
+                    "src_node": "node_E1",
+                    "dst_node": "node_G1",
+                    "src_to_dst_data_keys": {"outputE1": "inputG1"}
+                }
+            ]
+        },
+        {
+            "node_id": "node_F1",
+            "data_in": {"inputF1": 4},
+            "data_out": {"outputF1": 6},
+            "paths_in": [
+                {
+                    "edge_id": "edge_D1_F1",
+                    "src_node": "node_D1",
+                    "dst_node": "node_F1",
+                    "src_to_dst_data_keys": {"outputD1": "inputF1"}
+                }
+            ],
+            "paths_out": []
+        },
+        {
+            "node_id": "node_G1",
+            "data_in": {"inputG1": 5},
+            "data_out": {"outputG1": 7},
+            "paths_in": [
+                {
+                    "edge_id": "edge_E1_G1",
+                    "src_node": "node_E1",
+                    "dst_node": "node_G1",
+                    "src_to_dst_data_keys": {"outputE1": "inputG1"}
+                }
+            ],
+            "paths_out": []
+        }
+    ],
+    "edges": [
+        {
+            "edge_id": "edge_A1_B1",
+            "src_node": "node_A1",
+            "dst_node": "node_B1",
+            "src_to_dst_data_keys": {"outputA1": "inputB1"}
+        },
+        {
+            "edge_id": "edge_A1_C1",
+            "src_node": "node_A1",
+            "dst_node": "node_C1",
+            "src_to_dst_data_keys": {"outputA1": "inputC1"}
+        },
+        {
+            "edge_id": "edge_A1_D1",
+            "src_node": "node_A1",
+            "dst_node": "node_D1",
+            "src_to_dst_data_keys": {"outputA1": "inputD1"}
+        },
+        {
+            "edge_id": "edge_B1_E1",
+            "src_node": "node_B1",
+            "dst_node": "node_E1",
+            "src_to_dst_data_keys": {"outputB1": "inputE1"}
+        },
+        {
+            "edge_id": "edge_C1_E1",
+            "src_node": "node_C1",
+            "dst_node": "node_E1",
+            "src_to_dst_data_keys": {"outputC1": "inputE1"}
+        },
+        {
+            "edge_id": "edge_D1_F1",
+            "src_node": "node_D1",
+            "dst_node": "node_F1",
+            "src_to_dst_data_keys": {"outputD1": "inputF1"}
+        },
+        {
+            "edge_id": "edge_E1_G1",
+            "src_node": "node_E1",
+            "dst_node": "node_G1",
+            "src_to_dst_data_keys": {"outputE1": "inputG1"}
+        }
+    ]
+}

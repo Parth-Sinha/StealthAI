@@ -1,0 +1,14 @@
+{
+    "graph_id": "6729325af0e8101694cbdde0",
+    "root_inputs": {
+            "node_A": {
+                "inputA": 10
+            }
+        },
+        "data_overwrites": {
+            "node_B": {
+                "inputB": 20
+            }
+        },
+        "enable_list": ["node_A", "node_B", "node_C", "node_D", "node_E"]
+}
